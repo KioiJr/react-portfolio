@@ -1,11 +1,27 @@
-body{
-  font-family: Helvetica;
-}
+
 :root{
   --primary: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: #000;
+  --primary-red: #ef4035;
+}
+::selection{
+  color: orange;
 }
 
 /* Navbar */
+.nav{
+  z-index: 2;
+}
+body{
+  margin: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: #1a1a1a !important;
+  color: whitesmoke !important;
+  }
 
 .logo{
   width: 3rem;
@@ -32,5 +48,83 @@ nav ul li{
   border-top: 2px solid orange;
   border-bottom: 2px solid orange;
   color: aqua;
- 
+ }
+
+ /* Header */
+
+ .header-wrapper{
+  position: relative; 
+  background:url(Header.jpg) no-repeat;
+  background-size: cover;
+  height: 90vh;
+ }
+ .main-info{
+  position: absolute;
+  top:0; left: 0;bottom: 0;right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: Helvetica;
+ } 
+ .main-info h1{
+  text-transform: uppercase;
+  color:var(--primary-orange);
+ }
+ container-fluid{
+  font-family: Helvetica;
+}
+ .container-fluid{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  /* text-align: left; */
+
+  height: auto;
+ }
+ .container-fluid .text h2{
+text-align: center;
+ }
+.container-fluid .text p{
+margin: 10px;
+}
+.container-fluid .text img{
+  height: 15rem;
+  width: 16rem;
+  margin-left: 2rem;
+}
+ /* Typed Text */
+ .main-typed-text{
+  color: orange;
+  font-size: 3rem;
+ }
+ .typed-text{
+  font-size: 2rem;
+  color: #f9ab00;
+ }
+
+ /* Header Button */
+ .btn-main-offer{
+  border: 1px solid red;
+  background: rgb(255, 94, 0);
+  border-radius: 5px;
+  padding: 10px 12px;
+  font-family: Helvetica;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 4rem;
+  z-index: 1;
+ }
+ .btn-main-offer:hover{
+  color: #ef4035;
+  background: #000;
+ }
+.container-fluid .text .about-me{
+  margin-top: 2rem;
+  font-family: Helvetica; 
+
+  color: orange;
 }
